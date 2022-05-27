@@ -2,8 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.signal as sp
 import scipy.fftpack as fft
-import scipy.integrate as sint
-
 
 def correlation_scipy(time,data):
     """
