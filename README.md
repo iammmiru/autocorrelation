@@ -3,14 +3,12 @@
 In statistical physics, an autocorrelation function is widely used to understand a system's nonequilibrium behaivor.<br>
 However, the definition of autocorrelation function used in physics is different from the definition of correlation function used in statistics.<br>
 The physicist's definition is,
-$$
-\left<x_n x_0\right>=\frac{1}{m-n}\sum_{i=0}^{m-1} x_{n+i} x_i,
-$$
+$$\left< x_n x_0 \right>=\frac{1}{m-n} \sum_{i=0}^{m-1} x_{n+i} x_i,$$
 where $m$ is the number of elements. Note that $x_i$ becomes $0$ if $i>m-1$.
 In the mean time, the statistician's definition is
-$$
-z_n=\sum_{i=0}^{m-1} x_{n+i} x_i.
-$$
+$$z_n=\sum_{i=0}^{m-1} x_{n+i} x_i.$$
+
+
 
 Unfortunately, the physicist's version is not implemented in the popular python packages such as numpy and scipy.
 Naively using scipy.signal.correlate due to its cosmetic similarity, therefore, often leaves physicists puzzled, forcing them to implement their own algorithms.<br>
