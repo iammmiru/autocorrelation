@@ -19,4 +19,4 @@ The first method is using the fast Fourier transform (FFT) algorithm (scipy.fftp
 So, blindly implementing the FFT method results in an incorrect autucorrelation function. To remedy this, we insert some zeros in the data, namely zero padding, so that the algorithm runs as if it's acyclical. You can see the difference in the figure.<br>
 The second method is to modify scipy.signal.correlate so that it complies with the physicist's definition of autocorrelation function. It involves dividing each entry by the number of data points that are correlated, i.e., we are calculating the average of correlation.
 
-![alt text](https://github.com/iammmiru/autocorrelation/figure.png?raw=true)
+![alt text](https://github.com/iammmiru/autocorrelation/blob/master/figure.png?raw=true)
